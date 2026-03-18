@@ -34,6 +34,12 @@ public class Questions {
             //When the print statements in between the quote marks are placed in different lines, a compile-time error shows exactly 4 errors (unclosed string literal, the expected ';' and not a statement)
 
         //1.1.5. Describe what happens if you try to execute UseArgument with each of the following command lines
-            
+            //java UseArgument java = The program simply takes the argument as is and displays it for greeting during run-time.
+            //java UseArgument @!&^% = The program throws a ParserError, highlighting the incorrect use of the "&" because of its special reservation; however, wrapping the input in "" allows the program to safely accept this as a valid argument.
+            //java UseArgument 1234 = The program also simply takes the input as a valid argument and displays it for greeting during run-time.
+            //java UseArgument.java Bob = The program also simply takes the input as a valid argument and displays it for greeting during run-time. 
+            //java UseArgument Alice Bob = The program only accepts the first argument as a valid input and ignores the second argument value.
+
+        //1.1.6. Modify UseArgument.java to make a program UseThree.java that takes three names as command-line arguments and prints a proper sentence with the names in the reverse of the order given, so that, for example, java UseThree Alice Bob Carol prints Hi Carol, Bob, and Alice.
     }
 }
