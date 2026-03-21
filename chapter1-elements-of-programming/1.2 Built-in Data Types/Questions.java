@@ -43,5 +43,41 @@ public class Questions {
         // 1.2.4 Suppose that a and b are int variables. Simplify the following
         // expression: (!(a && b) && (a || b)) || ((a && b) || !(a || b))
 
+        // 1.2.5 The exclusive or operator ^ for boolean operands is defined to be true
+        // if they are different, false if they are the same. Give a truth table for
+        // this function.
+
+        // Answer:
+
+        // 1.2.6 Why does 10/3 give 3 and not 3.333333333?
+        // Answer: Since 10 and 3 are both integer values, Java does not emphasize the
+        // other values due to the automatic implicit type conversion
+
+        // 1.2.7 What does each of the following statements print?
+
+        // a. System.out.println(2 + "bc");
+        System.out.println(2 + "bc");
+
+        // Answer: This function simply concatenates both values together. This follows
+        // Java's data type special rules for String, wherein values are automatically
+        // converted to a String if a String literal is one of the operands.
+
+        // b.System.out.println(2 + 3 + "bc");
+        System.out.println(2 + 3 + "bc");
+
+        // Answer: This function first performs the addition on the two integer literals
+        // due to Java's internal left associativity and then concatenates that sum to
+        // the String literal and printing it to the console.
+
+        // c.System.out.println((2 + 3) + "bc");
+        System.out.println((2 + 3) + "bc");
+
+        // Answer: This function basically performs the same process as the one before.
+
+        // d.System.out.println("bc" + (2 + 3));
+        System.out.println("bc" + (2 + 3));
+
+        // e.System.out.println("bc" + 2 + 3);
+        System.out.println("bc" + 2 + 3);
     }
 }
